@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="README.md">English</a> · <a href="README-zh.md">中文</a> · <a href="README-ja.md">日本語</a>
+</p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banners/new-banner-1400.png">
   <img src="assets/banners/new-banner-1400.png" alt="ContextWizard Banner" width="100%">
