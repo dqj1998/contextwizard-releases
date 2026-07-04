@@ -2,6 +2,60 @@
 
 All notable changes to ContextWizard will be documented in this file.
 
+## [2.1.0] — 2026-07-04
+
+### 🎉 Feature: Open in Bookmark Manager
+
+Quickly navigate to any bookmark in the dedicated Bookmark Manager window.
+
+- **One-click access**: Click the "Open in Bookmark Manager" button from bookmark hover preview or chat list
+- **Auto-scroll & highlight**: The Bookmark Manager opens and scrolls directly to the selected bookmark with a pulse highlight
+- **Smart window management**: Reuses existing Bookmark Manager window if already open
+
+### 🧠 Improved Context Extraction
+
+Better context injection with enhanced language support and matching accuracy.
+
+- **CJK Support**: Intl.Segmenter-powered tokenization for Chinese, Japanese, and Korean text
+- **URL Normalization**: Path-prefix matching for more accurate conversation association
+- **Content Fallback**: Content-based matching when URL matching fails
+
+### ⏰ Reminder Reliability
+
+More dependable reminder scheduling and processing.
+
+- **Race Condition Prevention**: Lock mechanism prevents concurrent reminder alarm processing
+- **Accurate Monthly Reminders**: Improved `getNextNthWeekdayForMonth` calculation for monthly recurrence
+- **Storage Cleanup Protection**: Bookmarked conversations are now protected from being pruned during storage cleanup
+
+### 🌐 i18n Updates
+
+- Bookmark Manager button labels added to all 12 supported languages
+
+### 🔄 Context Panel Refresh
+
+The floating context panel now has a manual refresh button, giving you control over when bookmark data is reloaded.
+
+- **Refresh button**: Reload bookmarks from storage without reopening the panel
+- **Real-time sync**: Bookmark group expansion and conversation filtering happen on the fly
+- **Visual feedback**: Spinning indicator during refresh, toast notification with result count
+
+### 🔖 Bookmark Reliability Improvements
+
+More robust bookmark handling across all AI platforms.
+
+- **Better injection**: Bookmark context now replaces stale content instead of being silently skipped — re-injecting always delivers fresh context
+- **SPA-friendly markers**: Bookmarks now work reliably on Copilot and other single-page apps where content loads asynchronously (retries with backoff, on-the-fly marker creation)
+- **Direct Gemini links**: Opening a Gemini bookmark from the manager now reliably loads the full conversation — no more blank pages
+- **Conversation deduplication**: Fixed rare cases where conversations with changing URLs (e.g. Gemini) could create duplicate entries
+
+### 🐛 Bug Fixes
+
+- Fixed PLATFORMS re-declaration issue that could cause errors on double injection
+- Wrapped platforms.js in IIFE to fix illegal top-level return in popup.html context
+
+---
+
 ## [2.0.0] — 2026-07-02
 
 ### 🎉 Major: Bookmark Context Chat

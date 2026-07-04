@@ -22,6 +22,7 @@ Welcome to the ContextWizard documentation. ContextWizard is a free, local-first
 | [Bookmarks & Groups](features/bookmarks.md) | Message-level bookmarks with custom groups | 1.5.0+ |
 | [Smart Reminders](features/reminders.md) | Recurring notifications on bookmarked messages | 1.3.0+ |
 | [Context Panel](features/context-panel.md) | Inject bookmarks into active conversations (v2.0) | 2.0.0+ |
+| [Bookmark Manager](features/bookmarks.md) | Open dedicated window for bookmark management (v2.1) | 2.1.0+ |
 | [Prompt Editor](features/prompt-editor.md) | Reusable templates with auto-redaction | 1.4.0+ |
 | [Cloud Sync](features/cloud-sync.md) | Optional cross-device workspace sync | 1.4.0+ |
 

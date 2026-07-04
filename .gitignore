@@ -8,3 +8,6 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Generated store description drafts
+output-new-desc*.md

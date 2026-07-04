@@ -32,6 +32,7 @@ All bookmarks are stored in a single interface, regardless of which AI platform 
 | **Delete a bookmark** | Hover → delete icon (undo supported) |
 | **Rename a group** | Click group name → edit |
 | **Start a chat from a bookmark** | Bookmark list → "Start Chat" button |
+| **Open in Bookmark Manager** | Hover preview or chat list → "Open in Bookmark Manager" button (v2.1) |
 
 ## Related Features
 
